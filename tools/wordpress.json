@@ -13,7 +13,7 @@
         "most_recent": true
       },
 
-      "instance_type": "t2.micro",
+      "instance_type": "{{user `instance_type`}}",
       "ssh_username": "centos",
       "ami_name": "worpdress {{timestamp}}"
     }],
