@@ -1,6 +1,5 @@
 {
     "region": "us-east-1",
-    "php_version": "7.4",
-    "wordpress_version": "wordpress-5.4.2"   
-
+    "java_version": "1.8.0",
+    "jenkins_version": "2.235.5-1.1"
 }
