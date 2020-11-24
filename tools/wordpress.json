@@ -39,6 +39,10 @@
                 "sudo systemctl restart httpd", 
                 "sudo systemctl enable httpd" 
                  ]
-               }
+               },
+               {
+                "type": "breakpoint",
+                "note": "Wait for you to delete"
+                  }
        ]
 }

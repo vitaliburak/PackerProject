@@ -2,7 +2,7 @@
     "builders": [
       {
         "type": "amazon-ebs",
-      "region": "{{user `region`}}",
+      "region": "us-east-1",
        "source_ami": "ami-02eac2c0129f6376b",
        "instance_type": "t2.micro",
          
@@ -25,6 +25,10 @@
            "sudo systemctl start jenkins",
            "sudo systemctl status jenkins"
           ]
-        }
+        },
+        {
+          "type": "breakpoint",
+          "note": "Wait for you to delete"
+            }
       ]
 }

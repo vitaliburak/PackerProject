@@ -13,7 +13,7 @@
           },
       "instance_type": "t2.micro",
       "ssh_username": "centos",
-      "region": "{{user `region`}}",
+      "region": "us-east-1",
       "ami_name": "r1soft-server {{timestamp}}"
     }
   ],
@@ -33,6 +33,10 @@
           "sudo systemctl restart cdp-server",
           "sudo systemctl enable cdp-server"
          ]
-       }
+       },
+       {
+        "type": "breakpoint",
+        "note": "Wait for you to delete"
+          }
      ]
 }
