@@ -1,5 +1,5 @@
 {
-    
+    "region": "us-east-1",
     "php_version": "7.4",
     "wordpress_version": "wordpress-5.4.2"   
 
