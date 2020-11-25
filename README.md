@@ -9,7 +9,7 @@ Packer
 ## What does it do?
 Building AWS Mashine image for Jenkins, R1soft and Wordpress 
 
-![packer](/image/Screen Shot 2020-11-25 at 12.24.15 PM.png?raw=true "Click Discover")
+![packer](/image/uses.png?raw=true "Click Discover")
 
 
 ## Copy and paste commands 
