@@ -2,6 +2,7 @@
   "builders": [
     {
       "type": "amazon-ebs",
+      "region": "{{user `region`}}",
       "source_ami_filter": {
           "filters": {
               "virtualization-type": "hvm",
@@ -11,10 +12,9 @@
           "owners": ["679593333241"],
           "most_recent": true
           },
-      "instance_type": "t2.micro",
+      "instance_type": "{{user `instance_type`}}",
       "ssh_username": "centos",
-      "region": "us-east-1",
-      "ami_name": "r1soft-server {{timestamp}}"
+      "ami_name": "r1soft {{timestamp}}"
     }
   ],
   "provisioners": [{
