@@ -19,15 +19,14 @@
   ],
   "provisioners": [{
     "type": "file",
-       "source": "r1soft.repo",
-        "destination": "/tmp/"
-         },
-         
+       "source": "tools/r1soft.repo",
+        "destination": "/tmp/r1soft.repo"
+         },  
       {
     "type": "shell",
        "inline":[
           "sudo yum update -y",
-          "sudo mv  /tmp/r1soft.repo  /etc/yum.repos.d/",
+          "sudo mv  /tmp/r1soft.repo  /etc/yum.repos.d/r1soft.repo",
           "sudo yum install r1soft-cdp-enterprise-server -y",
           "sudo r1soft-setup --user admin --pass  redhat   --http-port 8080",
           "sudo systemctl restart cdp-server",
