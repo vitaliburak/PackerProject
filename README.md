@@ -19,7 +19,7 @@ Building AWS Mashine image for Jenkins, R1soft and Wordpress
 ```   
 * To run r1soft:
 ```
-   cd to tools then packer build r1soft.json
+   packer build -var-file vars/r1soft_vars.json  tools/r1soft.json
 ```
 * To run Wordpress:
 ```
