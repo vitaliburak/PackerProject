@@ -15,6 +15,8 @@
 
       "instance_type": "{{user `instance_type`}}",
       "ssh_username": "centos",
+      "ssh_keypair_name": "Packer",
+      "ssh_private_key_file": "/home/ec2-user/.ssh/id_rsa",
       "ami_name": "worpdress {{timestamp}}"
     }],
 
@@ -26,6 +28,8 @@
                 "sudo yum install wget -y",
                 "sudo yum install httpd -y", 
                 "sudo yum install unzip -y",
+                "sudo sed -i s/^SELINUX=.*$/SELINUX=permissive/ /etc/selinux/config",
+                "sudo setenforce 0",
                 "sudo yum install epel-release -y", 
                 "sudo yum install https://rpms.remirepo.net/enterprise/remi-release-7.rpm -y", 
                 "sudo yum-config-manager --enable remi-php{{user `php_version`}}", 

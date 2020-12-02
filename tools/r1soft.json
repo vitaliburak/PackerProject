@@ -14,6 +14,8 @@
           },
       "instance_type": "{{user `instance_type`}}",
       "ssh_username": "centos",
+      "ssh_keypair_name": "Packer",
+      "ssh_private_key_file": "/home/ec2-user/.ssh/id_rsa",
       "ami_name": "r1soft {{timestamp}}"
     }
   ],
