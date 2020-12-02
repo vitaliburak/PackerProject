@@ -15,16 +15,15 @@ Building AWS Mashine image for Jenkins, R1soft and Wordpress
 ## Copy and paste commands 
 * To run Jenkins:
 ```
-   packer build -var-file vars/jenkins_vars.json  tools/jenkins.json
+   packer build -var-file  jenkins_regions/virginia.json  tools/jenkins.json
 ```   
 * To run r1soft:
 ```
-   packer build -var-file vars/r1soft_vars.json  tools/r1soft.json
+   packer build -var-file  r1soft_regions/virginia.json  tools/r1soft.json
 ```
 * To run Wordpress:
 ```
-   packer build -var-file vars/wordpress_vars.json tools/wordpress.json 
+   packer build -var-file  wordpress_regions/virginia.json  tools/wordpress.json 
 ```
-
 
 
