@@ -10,7 +10,7 @@ Packer
 To create Jenkins AMI:
 
 
-- Choose region from jenkins_region folder 
+#### - Choose region from jenkins_region folder 
 
 Used variables
 ```
@@ -20,22 +20,25 @@ Used variables
     "jenkins_version": "2.235.5-1.1"
 ```  
 
-- Pick Jenkins.json from tools folder
+#### - Pick Jenkins.json from tools folder
 
-Example:
+#### Example:
 
- packer build -var-file jenkins_regions/virginia.json        tools/jenkins.json
- 
+ ```
+   packer build -var-file  jenkins_regions/virginia.json  tools/jenkins.json
+```   
  
 
 #### For R1soft and Wordpress similar steps
 
 Example:
+
+ ```
      r1soft_regions/virginia.json         tools/r1soft.json
 
                                  
      wordpress_regions/virginia.json  tools/wordpress.json
-
+ ```
 
 
 ## What does it do?
