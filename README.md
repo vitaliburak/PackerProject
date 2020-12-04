@@ -12,14 +12,6 @@ To create Jenkins AMI:
 
 #### - Choose region from jenkins_region folder 
 
-Used variables
-```
-  "region": "us-east-1",
-    "instance_type" : "t2.micro",
-    "java_version": "1.8.0",
-    "jenkins_version": "2.235.5-1.1"
-```  
-
 #### - Pick Jenkins.json from tools folder
 
 #### Example:
@@ -28,17 +20,17 @@ Used variables
    packer build -var-file  jenkins_regions/virginia.json  tools/jenkins.json
 ```   
  
+Used variables
+```
+    "region": "us-east-1",
+    "instance_type" : "t2.micro",
+    "java_version": "1.8.0",
+    "jenkins_version": "2.235.5-1.1"
+```  
 
 #### For R1soft and Wordpress similar steps
 
-Example:
 
- ```
-     r1soft_regions/virginia.json         tools/r1soft.json
-
-                                 
-     wordpress_regions/virginia.json  tools/wordpress.json
- ```
 
 
 ## What does it do?
