@@ -12,7 +12,7 @@ To create Jenkins AMI:
 
 - Choose region from jenkins_region folder 
 
-You can also change varibles for created AMI
+Used variables
 ```
   "region": "us-east-1",
     "instance_type" : "t2.micro",
@@ -25,8 +25,10 @@ You can also change varibles for created AMI
 Example:
 
  packer build -var-file jenkins_regions/virginia.json        tools/jenkins.json
+ 
+ 
 
-For R1soft and Wordpress similar steps
+#For R1soft and Wordpress similar steps
 
 Example:
      r1soft_regions/virginia.json         tools/r1soft.json
