@@ -10,7 +10,15 @@ Packer
 To create Jenkins AMI:
 
 
-- Choose region from jenkins_region folder
+- Choose region from jenkins_region folder 
+
+You can also change varibles for created AMI
+```
+  "region": "us-east-1",
+    "instance_type" : "t2.micro",
+    "java_version": "1.8.0",
+    "jenkins_version": "2.235.5-1.1"
+```  
 
 - Pick Jenkins.json from tools folder
 
