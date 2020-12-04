@@ -28,7 +28,7 @@ Example:
  
  
 
-#For R1soft and Wordpress similar steps
+# For R1soft and Wordpress similar steps
 
 Example:
      r1soft_regions/virginia.json         tools/r1soft.json
